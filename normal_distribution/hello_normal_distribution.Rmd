@@ -10,15 +10,21 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## R Markdown
+中国,深圳
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
+A continuous scalar random variable $\mathbf x$ is said to be normally distributed with parameters $\mu$ and  $\sigma^2$(written as $\mathbf x \sim \mathcal{N}(\mu ,\sigma^2)$) if its probability density function is given by 
+$$p(x)=\frac{1}{\sqrt {2 \pi }\sigma } e^{-\frac{(x-\mu)^2}{2\sigma ^2}}$$
+
+
 ```{r }
-set.seed(20151204)
+set.seed(20161117)
 #generate some random data
-x<-rnorm(10)
+x<-rnorm(100)
 #compute the standard deviation
 sd(x)
 ```
